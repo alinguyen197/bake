@@ -276,6 +276,7 @@ header{
 }
 .ourgallery-grid-item{
     position: relative;
+    background-color: #3085a3;
 }
 .ourgallery-overlay {
     position: absolute;
@@ -283,32 +284,53 @@ header{
     left: 0;
     padding: 2em;
     color: #fff;
-    text-transform: uppercase;
     width: 100%;
     height: 100%;
+    text-align: right;
 }
 .ourgallery-overlay h2{
-    position: absolute;
-    top: 30px;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: all 0.5s;
 }
-
+.ourgallery-overlay hr{
+    background-color: white;
+    height: 5px;
+    border: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
 .ourgallery-overlay span{
     font-weight: 600;
 }
-.ourgallery-grid-item h2::after{
+.ourgallery-overlay p{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: red;
-    content: " ";
-    -webkit-transform: translate3d(0,40px,0);
-    transform: translate3d(0,40px,0);
+    opacity: 0;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+    bottom:0px;
+    transition: all 0.5s;
+}
+.ourgallery-grid-item:hover hr{
+    opacity: 1;
+}
+.ourgallery-grid-item:hover p{
+    opacity: 1;
+    bottom: 30px;
+}
+.ourgallery-grid-item:hover h2{
+    opacity: 1;
+    padding: 0;
 }
 .ourgallery-grid-item a img{
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    opacity: 0.8;
 }
 .ourimg1{
     grid-column: 1/span 2;
