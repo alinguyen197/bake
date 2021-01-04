@@ -7,6 +7,9 @@ header, section, footer, aside, nav, main, article, figure {
     padding: 0;
     overflow-wrap: anywhere;
 }
+ol,ul{
+    margin:0px;
+}
 i{
     overflow-y: hidden;
 }
@@ -20,7 +23,7 @@ body{
 header{
    position: relative;
    min-height: 60px;
-   z-index: 1;
+   z-index: 10000;
 }
 #header{
     background-color: #4e2a84;
@@ -33,6 +36,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+
 }
 .hidden{
     height: 60px;
@@ -448,6 +452,74 @@ header{
 .grid-team-item:hover .grid-team-item-inner{
     opacity: 0;
 }
+/*----------------------------------------------------------*/
+/*------------------- SECTION-TESTIMONIALS -----------------*/
+/*----------------------------------------------------------*/
+#test{
+    background-image: url(./layout/images/cc1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.test-inner{
+    padding: 3% 15%;
+}
+.test-inner h1{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+.carousel-inner {
+    border: 5px solid #ff0e83;;
+    height: 220px;
+    background-color: rgb(245, 245, 245,0.4);
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    margin-bottom: 3%;
+   
+}
+.carousel-indicators li{
+    color: grey !important;
+}
+.carousel-inner .item{
+    width: 100%;
+    
+}   
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    top: -60px;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 20px;
+   
+}
+.carousel-caption p{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    letter-spacing: 1px; 
+    font-weight: thin;
+    text-shadow: none;
+}
+.carousel-caption h4 {
+    font-size: 2rem; 
+    text-shadow: none;
+    text-transform: uppercase;
+    word-spacing: 1px;
+}
+.carousel-caption p span{
+    font-size: 21px;
+    padding: 0px 18px;
+    color: #2cbeff;
+}
+
 /*----------------------------------------------------------*/
 /*----------------------- SECTION-FORM ---------------------*/
 /*----------------------------------------------------------*/
