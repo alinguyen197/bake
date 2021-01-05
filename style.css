@@ -69,7 +69,7 @@ header{
     background-image: url(./layout/images/b3.jpg);
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -680,3 +680,30 @@ textarea::placeholder{
     font-size: 14px;
     letter-spacing: 3px;
 }
+/* BOTTOM TO TOP */
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 1%;
+    overflow: hidden;
+    z-index: 999;
+    width: 64px;
+    height: 64px;
+    border: none;
+    text-indent: 100%;
+    background:url(./images/to-top.png)  no-repeat 0px 0px;
+}
+#toTopHover {
+     width: 64px;
+    height: 64px; 
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0); 
+    color: red;
+}
+/*-- //bottom-to-top --*/

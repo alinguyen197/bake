@@ -520,6 +520,9 @@
         <div class="footer-bottom">
             <p>© 2018 Bake. All Rights Reserved | Design by <span>Ali Nguyen</span> </p>
         </div>
+        <div style="background: white;height: 50px;">
+
+        </div>
      </footer>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -538,5 +541,14 @@
      <script>
         new WOW().init();
     </script>
+    <!-- for-bottom-to-top smooth scrolling -->
+  <!-- <script src="./js/move-top.js"></script> -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+  </script>
+  <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  <!-- //for-bottom-to-top smooth scrolling -->
 </body>
 </html>
