@@ -17,6 +17,9 @@ body{
     font-size:12px;
     font-family: 'Montserrat', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /*----------------------------------------------------------*/
 /*------------------------- HEADER -------------------------*/
 /*----------------------------------------------------------*/
@@ -78,12 +81,12 @@ header{
 .carosel-inner h1{
     
     color: white;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 10px;
 }
 .carosel-inner p{
     color:white;
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 .carosel-inner button{
@@ -124,35 +127,35 @@ header{
     background-color: #4e2a84;
 }
 .intro-tradition h4{
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 .intro-creativity{
     background-color:#ff0e83 ;
 }
 .intro-creativity h4{
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 .intro-foryou{
     background-color: #ed6498;
 }
 .intro-foryou h4{
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 .intro-quality{
     background-color: #836eaa;
 }
 .intro-quality h4{
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 .intro-tasty{
     background-color:#4e2a84 ;
 }
 .intro-tasty h4{
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 .img-1{
@@ -179,13 +182,13 @@ header{
     text-align: center;
 }
 .statistic-item h3{
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 17px;
     color: #4e2a84;
 }
 .statistic-item p{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .video-content{
     display: grid;
@@ -213,7 +216,7 @@ header{
 .gallery-inner h1{
     text-align: center;
     color:white;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
 }
 .gallery-details{
@@ -239,11 +242,11 @@ header{
 }
 .gallery-details-item h4{
     margin: 14px 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 .gallery-details-item p{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 0.5px;
     line-height: 25px;
@@ -357,7 +360,7 @@ header{
     margin-bottom: 3rem;
 }
 .team-title h1{
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
 }
 .grid-team{
@@ -377,7 +380,7 @@ header{
 .grid-team-item-inner{
     position: absolute;
     background-color: #ff0e83;
-    height: 90px;
+    height: 110px;
     width: 100%;
     bottom: 0px;
     padding: 30px 15px;
@@ -386,11 +389,11 @@ header{
 }
 .grid-team-item-inner .name{
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 5px;
 }
 .grid-team-item-inner .position{
-    font-size: 10px;
+    font-size: 1.2rem;
 }
 .overlay{
     background-color: rgba(0, 0, 0, 0.9);
@@ -408,27 +411,31 @@ header{
 }
 .overlay ul li{
     list-style: none;
-   float: left;
+    float: left;
     border: 1px solid white;
     width: 50px;
     height: 50px;
     margin-right: 5px;
+   
 }
 .overlay h2{
     color: #ff0e83;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 20px 20px;
 }
 .overlay span{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 20px 20px;
 }
 .overlay ul{
     margin: 20px 20px;
 }
 .overlay p{
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 20px 20px;
+}
+.overlay-inner p{
+    padding: 0px;
 }
 .overlay-inner{
    padding: 50px;
@@ -438,10 +445,10 @@ header{
     justify-content: center;
     align-items: center;
 }
-.overlay .fab{
-    
+
+.overlay i{
     color:white;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .overlay ul li a{
     text-decoration: none;  
@@ -452,6 +459,10 @@ header{
 .grid-team-item:hover .grid-team-item-inner{
     opacity: 0;
 }
+.overlay-inner ul li a:hover i{
+   color:#ff0e83
+}
+
 /*----------------------------------------------------------*/
 /*------------------- SECTION-TESTIMONIALS -----------------*/
 /*----------------------------------------------------------*/
@@ -469,7 +480,7 @@ header{
     color: white;
     font-weight: 600;
     letter-spacing: 3px;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 5rem;
 }
 .carousel-inner {
@@ -507,6 +518,7 @@ header{
     letter-spacing: 1px; 
     font-weight: thin;
     text-shadow: none;
+    padding: 0px;
 }
 .carousel-caption h4 {
     font-size: 2rem; 
@@ -565,6 +577,7 @@ textarea::placeholder{
     background-color:#ff0e83 ;
     border: 0;
     transition: all 0.5s;
+   
 }
 .form-btn input:hover{
     background-color: black;
@@ -607,6 +620,7 @@ textarea::placeholder{
 }
 .address-grid-item  i,p{
     margin-bottom: 10px;
+    padding: 0px 30px;
 }
 /*----------------------------------------------------------*/
 /*------------------------ FOOTER --------------------------*/
@@ -625,6 +639,9 @@ textarea::placeholder{
     color: #ff0e83;
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+.footer-grid-item p{
+     padding: 0px;
 }
 .about-us ul li{
     list-style: none;
@@ -670,6 +687,11 @@ textarea::placeholder{
     border: 0;
     border-radius: 5px;
     margin-bottom: 10px;
+    transition: all 0.5s;
+}
+.footer-submit button:hover{
+    color: black;
+    background-color: white;
 }
 .footer-bottom span{
     color: #ff0e83;
@@ -685,7 +707,7 @@ textarea::placeholder{
     display: none;
     text-decoration: none;
     position: fixed;
-    bottom: 24px;
+    bottom: 20px;
     right: 1%;
     overflow: hidden;
     z-index: 999;
